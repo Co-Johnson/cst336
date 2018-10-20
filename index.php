@@ -6,6 +6,8 @@
 
 echo "Corey Johnson's CST336 Home Page";
 
+<a href="labs/lab1/index.html">Lab 1</a>
+
 ?>
 </body>
 </html>
