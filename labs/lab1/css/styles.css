@@ -89,3 +89,7 @@ h1 {
 #topHr {
     width: 50%;
 }
+
+iframe {
+    border: 0px;
+}
