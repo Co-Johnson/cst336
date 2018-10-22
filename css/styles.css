@@ -1,0 +1,40 @@
+body {
+    background-color: #cee3ee;
+    color: #eff6f9;
+    width: 960px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+h1 {
+    color: #7bb1cd;
+}
+
+h2 {
+    color: #a5cbdf;
+}
+
+hr {
+    color: #fefefe;
+    margin-bottom: 25px;
+}
+
+#content {
+    margin: 0px auto;
+    text-align: center;
+}
+
+#labs, #homework {
+    background-color: #7bb1cd;
+    color: #eff6f9;
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+    width: 455px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#footer {
+    clear: left;
+}
