@@ -8,7 +8,7 @@ body {
     top: 0px;
     left: 5%;
     width: 90%;
-    height: 120%;
+    height: 130%;
     z-index: 0;
     margin: 100px auto;
     opacity: .75;
@@ -29,9 +29,9 @@ body {
 #title {
     background-color: #e57c1f;
     position: absolute;
-    top: 12.5%;
+    top: 70px;
     left: 40%;
-    width: 50%;
+    width: 45%;
     z-index: 2;
     opacity: .75;
     color: white;
@@ -73,10 +73,12 @@ body {
     background-color: #e57c1f;
     opacity: .75;
     z-index: 5;
-    position: absolute;
-    top:80%;
-    left: 15%;
+    position: relative;
+    clear: right;
+    width: 650px;
+    right: 30%;
     padding: 2.5%;
+    text-align: center;
 }
 
 a, h2 {
@@ -91,15 +93,16 @@ a:hover, #current {
     color: #e57c1f;
 }
 
+
 h3 {
     font-size: 2vw;
     font-family: 'Chakra Petch', sans-serif;
 }
 
 #footer {
-    margin: 10px auto;
+    margin: 100px auto;
     position: absolute;
-    top: 135%;
+    top: 1500px;
     width: 100%;
     text-align: center;
     color: #093254;
@@ -107,6 +110,7 @@ h3 {
 
 #source {
     color: #e57c1f;
+    float: right;
 }
 
 #source:hover {
