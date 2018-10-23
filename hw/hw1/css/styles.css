@@ -116,3 +116,7 @@ h3 {
 #source:hover {
     text-decoration: underline;
 }
+
+iframe {
+    border: 0px;
+}
