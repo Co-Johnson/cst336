@@ -28,9 +28,10 @@ body {
 
 #title {
     background-color: #e57c1f;
-    position: absolute;
+    position: relative;
+    float: right;
     top: 70px;
-    left: 40%;
+    margin-right: 12%;
     width: 45%;
     z-index: 2;
     opacity: .75;
@@ -43,7 +44,8 @@ body {
 
 #links {
     background-color: #91a17b;
-    position: absolute;
+    position: relative;
+    float: left;
     top: 175px;
     left: 5%;
     width: 20%;
@@ -58,15 +60,18 @@ body {
 
 #overview {
     background-color: white;    
-    position: absolute;
+    position: relative;
+    float: right;
+    clear: right;
     right: 0px;
-    top: 300px;
+    top: 100px;
     width: 60%;
     color: #262242;
     opacity: .75;
     z-index: 4;
     padding: 5%;
     font-size: 1.7vw;
+    min-height: 300px;
 }
 
 #image {
@@ -74,9 +79,9 @@ body {
     opacity: .75;
     z-index: 5;
     position: relative;
+    float: left;
     clear: right;
     width: 650px;
-    right: 30%;
     padding: 2.5%;
     text-align: center;
 }
@@ -101,8 +106,8 @@ h3 {
 
 #footer {
     margin: 100px auto;
-    position: absolute;
-    top: 190%;
+    position: relative;
+    clear: both;
     width: 100%;
     text-align: center;
     color: #093254;
