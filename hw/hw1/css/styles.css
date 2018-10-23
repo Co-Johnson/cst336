@@ -8,7 +8,7 @@ body {
     top: 0px;
     left: 5%;
     width: 90%;
-    height: 1200px;
+    height: 120%;
     z-index: 0;
     margin: 100px auto;
     opacity: .75;
@@ -29,7 +29,7 @@ body {
 #title {
     background-color: #e57c1f;
     position: absolute;
-    top: 125px;
+    top: 12.5%;
     left: 40%;
     width: 50%;
     z-index: 2;
@@ -38,9 +38,7 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 5vw;
     text-align: left;
-    text-indent: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 2% 4%;
 }
 
 #links {
@@ -55,8 +53,7 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 1.5vw;
     text-align: right;
-    text-indent: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 10%;
 }
 
 #overview {
@@ -69,7 +66,7 @@ body {
     opacity: .75;
     z-index: 4;
     padding: 5%;
-    font-size: 1.7em;
+    font-size: 1.7vw;
 }
 
 #image {
@@ -77,34 +74,41 @@ body {
     opacity: .75;
     z-index: 5;
     position: absolute;
-    top:800px;
-    left: 200px;
+    top:80%;
+    left: 15%;
     padding: 2.5%;
 }
 
 a, h2 {
-    margin-right: 100px;
+    margin-right: 25%;
     color: white;
     text-decoration: none;
 }
 
 a:hover, #current {
-    font-size: 3vw;
-    /*margin-right: 50px;*/
+    font-size: 1.7vw;
     transition: .9s;
     color: #e57c1f;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2vw;
     font-family: 'Chakra Petch', sans-serif;
 }
 
 #footer {
     margin: 10px auto;
     position: absolute;
-    top:1350px;
+    top: 135%;
     width: 100%;
     text-align: center;
     color: #093254;
+}
+
+#source {
+    color: #e57c1f;
+}
+
+#source:hover {
+    text-decoration: underline;
 }
