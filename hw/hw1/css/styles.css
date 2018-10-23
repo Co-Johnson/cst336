@@ -102,7 +102,7 @@ h3 {
 #footer {
     margin: 100px auto;
     position: absolute;
-    top: 1500px;
+    top: 190%;
     width: 100%;
     text-align: center;
     color: #093254;
@@ -119,4 +119,11 @@ h3 {
 
 iframe {
     border: 0px;
+}
+
+blockquote {
+    background-color: #262242;
+    color: white;
+    opacity: .75;
+    padding: 5px;
 }
