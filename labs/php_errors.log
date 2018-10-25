@@ -1,0 +1,4 @@
+[24-Oct-2018 18:09:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 10
+[25-Oct-2018 05:18:29 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 11
+[25-Oct-2018 05:18:29 UTC] PHP Stack trace:
+[25-Oct-2018 05:18:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
