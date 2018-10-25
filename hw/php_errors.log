@@ -1,0 +1,9 @@
+[25-Oct-2018 17:47:11 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 2
+[25-Oct-2018 17:47:11 UTC] PHP Stack trace:
+[25-Oct-2018 17:47:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Oct-2018 17:47:11 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 2
+[25-Oct-2018 17:47:11 UTC] PHP Stack trace:
+[25-Oct-2018 17:47:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[25-Oct-2018 17:47:11 UTC] PHP Fatal error:  Call to undefined function play() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 15
+[25-Oct-2018 17:47:11 UTC] PHP Stack trace:
+[25-Oct-2018 17:47:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0

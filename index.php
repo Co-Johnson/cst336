@@ -22,12 +22,14 @@
             <div id="labs">
                 <h2>Labs</h2>
                 <hr>
-                <a href="labs/lab1/index.html">Lab 1</a>
+                <a href="labs/lab1/index.html">Lab 1 - Personal Portfolio</a><br />
+                <a href="labs/lab2/index.php">Lab 2 - Slot Machine</a><br />
             </div>
             <div id="homework">
                 <h2>Homework</h2>
                 <hr>
-                <a href="hw/hw1/index.html">Homework 1</a>
+                <a href="hw/hw1/index.html">Homework 1 - Augmented Reality</a><br />
+                <a href="hw/hw2/index.php">Homework 2</a><br />
             </div>
         </div>
         <div id="footer">
