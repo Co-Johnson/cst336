@@ -101,7 +101,6 @@ function checkPostData(&$gridArray){
                 break;
             case 2:
                 if($gridArray[1] == 0){
-                    echo "<h1>1</h1>\r\n";
                     $gridArray[1] = $gridArray[2];
                     $gridArray[2] = 0;
                 }
