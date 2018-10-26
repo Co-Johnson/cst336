@@ -3,34 +3,15 @@
 function displayGrid(&$gridArray){
     echo "<form action='index.php' method='get'>\r\n";
     echo "<table>\r\n";
-    echo "<tr>\r\n";
-    echo "<td><a href='index.php?gridClick=0'><img src='img/$gridArray[0].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=1'><img src='img/$gridArray[1].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=2'><img src='img/$gridArray[2].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=3'><img src='img/$gridArray[3].png'></a></td>\r\n";
-    echo "</tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<td><a href='index.php?gridClick=4'><img src='img/$gridArray[4].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=5'><img src='img/$gridArray[5].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=6'><img src='img/$gridArray[6].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=7'><img src='img/$gridArray[7].png'></a></td>\r\n";
-    echo "</tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<td><a href='index.php?gridClick=8'><img src='img/$gridArray[8].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=9'><img src='img/$gridArray[9].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=10'><img src='img/$gridArray[10].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=11'><img src='img/$gridArray[11].png'></a></td>\r\n";
-    echo "</tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<tr>\r\n";
-    echo "<td><a href='index.php?gridClick=12'><img src='img/$gridArray[12].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=13'><img src='img/$gridArray[13].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=14'><img src='img/$gridArray[14].png'></a></td>\r\n";
-    echo "<td><a href='index.php?gridClick=15'><img src='img/$gridArray[15].png'></a></td>\r\n";
-    echo "</tr>\r\n";
-    echo "<tr>\r\n";
+    $x = 0;
+    do {
+        echo "<tr>\r\n";
+        for($y = 0; $y < 4; $y++){
+            echo "<td><a href='index.php?gridClick=$x'><img src='img/$gridArray[$x].png'></a></td>\r\n";    
+            $x++;
+        }
+        echo "</tr>\r\n";
+    }while ($x < 16);
     echo "</table>\r\n";
     echo "<a href='index.php?gridClick=16'><img src='img/playagain.png'></a>";
     echo "</form>\r\n";
