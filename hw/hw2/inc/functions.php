@@ -95,7 +95,7 @@ function checkPostData(&$gridArray){
                     $gridArray[1] = 0;
                 }
                 else if($gridArray[5] == 0){
-                    $gridArray[5] = $gridArray[0];
+                    $gridArray[5] = $gridArray[1];
                     $gridArray[1] = 0;
                 }
                 break;
@@ -305,7 +305,21 @@ function checkPostData(&$gridArray){
         }
         updateCookie($gridArray);
     }
+    
    
+}
+
+function checkWin($gridArray){
+    $testArray = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0);
+    if($gridArray == $testArray){
+        echo "<h1>You Win!</h1>";
+        deleteCookie();
+    }
+}
+
+function deleteCookie(){
+    $cookieValue = 0;
+    setcookie("tileGameCookie", $cookieValue, time() - (3600), "/");
 }
     
 ?>

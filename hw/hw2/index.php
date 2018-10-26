@@ -17,6 +17,7 @@
             checkCookie($gridArray);
             checkPostData($gridArray);
             displayGrid($gridArray);
+            checkWin($gridArray);
                
             ?>
         </div>
