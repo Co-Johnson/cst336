@@ -29,7 +29,7 @@
                 <h2>Homework</h2>
                 <hr>
                 <a href="hw/hw1/index.html">Homework 1 - Augmented Reality</a><br />
-                <a href="hw/hw2/index.php">Homework 2</a><br />
+                <a href="hw/hw2/index.php">Homework 2 - Sliding Puzzle</a><br />
             </div>
         </div>
         <div id="footer">
