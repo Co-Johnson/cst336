@@ -11,6 +11,7 @@
     </head>
     <body>
         <div id="main">
+            <h1>Sliding Puzzle</h1>
             <?php
             
             $gridArray = array();

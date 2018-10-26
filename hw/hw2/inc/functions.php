@@ -13,7 +13,8 @@ function displayGrid(&$gridArray){
         echo "</tr>\r\n";
     }while ($x < 16);
     echo "</table>\r\n";
-    echo "<a href='index.php?gridClick=16'><img src='img/playagain.png'></a>";
+    echo "<br /><br />";
+    echo "<a  href='index.php?gridClick=16'><img id='again' src='img/playagain.png'></a>";
     echo "</form>\r\n";
 }
 
@@ -293,9 +294,10 @@ function checkPostData(&$gridArray){
 function checkWin($gridArray){
     $testArray = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0);
     if($gridArray == $testArray){
-        echo "<h1>You Win!</h1>";
+        echo "<h1 id='winner'>You Win!</h1>";
         deleteCookie();
     }
+   
 }
 
 function deleteCookie(){

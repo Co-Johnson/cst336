@@ -1,0 +1,38 @@
+body {
+    background-color: #efefef;
+    color: #ff3b3f;
+}
+table {
+    margin: 0px auto;
+    background-color: #a9a9a9;
+    padding: 5px;
+    border: 5px solid #ff3b3f;
+}
+#main {
+    text-align: center;
+}
+
+#title {
+    color: #ff3b3f;
+}
+
+h1 {
+    color: #ff3b3f;
+    font-size: 3em;
+    font-family: 'Krub', sans-serif;
+}
+
+#winner {
+    font-size: 5em;
+    width: 100%;
+    background-color: #a9a9a9;
+}
+
+#again {
+    border: 5px solid #a9a9a9;
+}
+
+#again:hover {
+    border: 5px solid #ff3b3f;
+}
+
