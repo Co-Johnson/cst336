@@ -36,3 +36,8 @@ h1 {
     border: 5px solid #ff3b3f;
 }
 
+#footer {
+    margin: 25px auto;
+    width: 100%;
+    text-align: center;
+}
