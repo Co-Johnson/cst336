@@ -25,6 +25,7 @@
                 <a href="labs/lab1/index.html">Lab 1 - Personal Portfolio</a><br />
                 <a href="labs/lab2/index.php">Lab 2 - Slot Machine</a><br />
                 <a href="labs/lab3/index.php">Lab 3 - Pixabay Image Carousel</a><br />
+                <a href="labs/lab4/index.php">Lab 4 - Shopping Cart</a><br />
             </div>
             <div id="homework">
                 <h2>Homework</h2>
