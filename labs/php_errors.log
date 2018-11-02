@@ -20,3 +20,6 @@
 [01-Nov-2018 01:23:01 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab3/index.php on line 95
 [01-Nov-2018 01:23:01 UTC] PHP Stack trace:
 [01-Nov-2018 01:23:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab3/index.php:0
+[02-Nov-2018 18:22:37 UTC] PHP Fatal error:  Call to undefined function isnull() in /home/ubuntu/workspace/cst336/labs/lab4/scart.php on line 19
+[02-Nov-2018 18:22:37 UTC] PHP Stack trace:
+[02-Nov-2018 18:22:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/scart.php:0

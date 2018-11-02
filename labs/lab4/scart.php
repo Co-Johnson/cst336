@@ -16,7 +16,10 @@
     if(isset($_POST['itemId'])){
         foreach($_SESSION['cart'] as &$item){
             if($item['id']== $_POST['itemId']){
-                $item['quantity'] = $_POST['update'];
+                if(!empty($_POST['update']) && $_POST['update'] > 0)
+                {
+                    $item['quantity'] = $_POST['update'];
+                }
             }
         }
     }

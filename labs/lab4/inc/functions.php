@@ -71,10 +71,10 @@ function displayCart(){
             echo "<td><button class='btn btn-danger'>Remove</button></td>";
             echo "</form>";
             setlocale(LC_MONETARY, 'en_US');
-            echo "<td>" . money_format('%(#7n', $itemTotal) . "</td>";
+            echo "<td>" . money_format('$%i', $itemTotal) . "</td>";
             echo"</tr>";
         }
-        echo "<td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>Total: $ </td><td>" . money_format('%(#7n', $subTotal) . "</td>";
+        echo "<td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>Total:</td><td>" . money_format('$%i', $subTotal) . "</td>";
         echo "</table>";
         
         
