@@ -20,8 +20,8 @@ function displayResults(){
             echo "<form method='post'>";
             echo "<input type='hidden' name='itemName' value='$itemName'>";
             echo "<input type='hidden' name='itemPrice' value='$itemPrice'>";
-            echo "<input type='hidden' name='image' value='$itemImage'>";
-            echo "<input type='hidden' name='id' value='$itemId'>";
+            echo "<input type='hidden' name='itemImage' value='$itemImage'>";
+            echo "<input type='hidden' name='itemId' value='$itemId'>";
             
             // Check to see if the most recent POST request has the same itemId
             // If so, this item was just added to the cart. Display different button.
@@ -43,13 +43,15 @@ function displayResults(){
 function displayCart(){
     if(isset($_SESSION['cart'])){
         echo "<table class='table'>";
+        $subTotal = 0;
         foreach($_SESSION['cart'] as $item){
             $itemName = $item['name'];
             $itemPrice = $item['price'];
             $itemImage = $item['image'];
             $itemId = $item['id'];
             $itemQuant = $item['quantity'];
-            
+            $itemTotal = $itemPrice * $itemQuant;
+            $subTotal += $itemTotal;
             // Display item as table row
             echo "<tr>";
             echo "<td><img src='$itemImage'></td>";
@@ -64,14 +66,18 @@ function displayCart(){
             echo "</form>";
             
             //Hidden input element containing the item name
-            echo "<form method='post>";
-            echo "<input type='hidden' name='removeId' value='$itemId'>";
+            echo "<form method='post'>";
+            echo "<input type='hidden' name='removeId' value='$itemId' >";
             echo "<td><button class='btn btn-danger'>Remove</button></td>";
             echo "</form>";
-            
+            setlocale(LC_MONETARY, 'en_US');
+            echo "<td>" . money_format('%(#7n', $itemTotal) . "</td>";
             echo"</tr>";
         }
+        echo "<td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>Total: $ </td><td>" . money_format('%(#7n', $subTotal) . "</td>";
         echo "</table>";
+        
+        
     }
 }
 

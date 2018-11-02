@@ -5,7 +5,6 @@
     
     // If remove button has been clicked, search cart for that item and unset
     if(isset($_POST['removeId'])){
-        echo $_POST['removeId'];
         foreach($_SESSION['cart'] as $itemKey => $item){
             if ($item['id'] == $_POST['removeId']){
                 unset($_SESSION['cart'][$itemKey]);
