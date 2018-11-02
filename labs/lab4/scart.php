@@ -1,3 +1,27 @@
+<?php
+    include 'inc/functions.php';
+    session_start();
+    
+    
+    // If remove button has been clicked, search cart for that item and unset
+    if(isset($_POST['removeId'])){
+        echo $_POST['removeId'];
+        foreach($_SESSION['cart'] as $itemKey => $item){
+            if ($item['id'] == $_POST['removeId']){
+                unset($_SESSION['cart'][$itemKey]);
+            }
+        }
+    }
+    
+    // If 'itemId' quantity has been sent, search for the item with that ID and update
+    if(isset($_POST['itemId'])){
+        foreach($_SESSION['cart'] as &$item){
+            if($item['id']== $_POST['itemId']){
+                $item['quantity'] = $_POST['update'];
+            }
+        }
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,13 +45,20 @@
                         </div>
                         <ul class='nav navbar-nav'>
                             <li><a href='index.php'>Home</a></li>
-                            <li><a href='scart.php'>Cart</a></li>
+                            <li><a href='scart.php'>
+                            <span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'>
+                            </span> Cart: <?php displayCartCount(); ?> </a></li>
                         </ul>
                     </div>
                 </nav>
                 <br /> <br /> <br />
                 <h2>Shopping Cart</h2>
                 <!-- Cart Items -->
+                <?php 
+                    if(isset($_SESSION['cart'])){
+                        displayCart();
+                    }
+                ?>
 
             </div>
         </div>
