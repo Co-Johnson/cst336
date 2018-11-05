@@ -66,9 +66,11 @@
             $records = $stmt->fetchALL(PDO::FETCH_ASSOC);
             
             foreach($records as $record){
+                echo '<div class="card">';
                 echo "<a href=\"purchaseHistory.php?productId=".$record['productId']. "\" > History </a>";
                 echo $record["productName"] . " " . $record["productDescription"] . 
                      " $" . $record["price"] . "<br /> <br />";
+                echo "</div>";   
             }
         }
     }
@@ -81,9 +83,9 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        
-        <div>
-            <h1> OtterMart Product Search </h1>
+        <h1> OtterMart Product Search </h1>
+        <div id="search">
+            
             
             <form>
                 Product: <input type="text" name="product" />
@@ -115,5 +117,16 @@
         <hr>
         <?=displaySearchResults() ?>
         
+        
+        <div id="footer">
+            <hr>
+            <br /><br />
+            <p>
+                CST 336 Internet Programming 2018 &copy; Johnson <br />
+                This website is for academic purposes only.
+                <br /><br />
+                <img src="img/logo.png" alt="CSUMB logo">
+            </p>
+        </div>
     </body>
 </html>
