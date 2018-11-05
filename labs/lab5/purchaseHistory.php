@@ -3,6 +3,7 @@
     <head>
         <title>CST336: OtterMart Product Search</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
     </head>
     <body>
         <h1>OtterMart Product Search</h1>
