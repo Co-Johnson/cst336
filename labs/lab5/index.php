@@ -31,8 +31,8 @@
             $sql = "SELECT * FROM om_product WHERE 1";
             
             if(!empty($_GET['product'])){
-                $sql .= " AND productName LIKE :productName ";
-                $sql .= " OR productDescription LIKE :productDescription";
+                $sql .= " AND (productName LIKE :productName ";
+                $sql .= " OR productDescription LIKE :productDescription )";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
                 $namedParameters[":productDescription"] = "%" . $_GET['product'] . "%";
             }
