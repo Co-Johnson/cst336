@@ -5,7 +5,7 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <h1>OtterMart</h1>
+        <h1>OtterMart Product Search</h1>
         <h3>Product History: </h3>
         <div id="history">
         <?php
