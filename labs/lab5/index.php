@@ -94,7 +94,7 @@
                         <?=displayCategories() ?>
                     </select>
                 <br />
-                Price: From <input type="text" name="priceForm" size="7" />
+                Price: From <input type="text" name="priceFrom" size="7" />
                        To   <input type="text" name="priceTo" size="7" />
                 <br />
                 Order result by:
