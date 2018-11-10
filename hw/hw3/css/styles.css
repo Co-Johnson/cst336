@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+    background-color: #3e373d;
+    color: #72ead9;
+}
+
+#survey {
+    text-align: left;
+    border: 2px;
+    border-color: #72ead9;
+    border-style: solid;
+    border-radius: 10px;
+    
+    width: 600px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#results {
+    text-align: left;
+    border: 2px;
+    border-color: #72ead9;
+    border-style: solid;
+    border-radius: 10px;
+    
+    width: 600px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#error {
+    width: 600px;
+    margin: 20px auto;
+   
+    text-align:left;
+    list-style-type: square;
+    color: red;
+    border: 2px solid red;
+}
+
+
+input[type=submit]{
+    background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: white;
+}

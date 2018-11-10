@@ -91,3 +91,97 @@
 [25-Oct-2018 23:21:13 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/cst336/hw/hw2/inc/functions.php on line 314
 [25-Oct-2018 23:21:13 UTC] PHP Stack trace:
 [25-Oct-2018 23:21:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[09-Nov-2018 19:33:24 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 22
+[09-Nov-2018 19:33:24 UTC] PHP Stack trace:
+[09-Nov-2018 19:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[09-Nov-2018 19:35:16 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 26
+[09-Nov-2018 19:35:16 UTC] PHP Stack trace:
+[09-Nov-2018 19:35:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[09-Nov-2018 19:40:41 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 31
+[09-Nov-2018 19:40:41 UTC] PHP Stack trace:
+[09-Nov-2018 19:40:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[09-Nov-2018 19:41:26 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 32
+[09-Nov-2018 19:41:26 UTC] PHP Stack trace:
+[09-Nov-2018 19:41:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[09-Nov-2018 19:49:25 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 45
+[09-Nov-2018 19:49:25 UTC] PHP Stack trace:
+[09-Nov-2018 19:49:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[09-Nov-2018 19:57:49 UTC] PHP Fatal error:  Call to undefined function displayCategories() in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 45
+[09-Nov-2018 19:57:49 UTC] PHP Stack trace:
+[09-Nov-2018 19:57:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[10-Nov-2018 00:03:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:55
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(55): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(123): insertData()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 55
+[10-Nov-2018 00:05:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:61
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(61): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(129): insertData()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 61
+[10-Nov-2018 00:06:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(130): insertData()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 62
+[10-Nov-2018 00:09:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(130): insertData()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 62
+[10-Nov-2018 00:09:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:62
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(62): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(130): insertData()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 62
+[10-Nov-2018 00:31:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "Male"' at line 1' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:78
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(78): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(266): getResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 78
+[10-Nov-2018 00:33:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "Female"' at line 1' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:87
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(87): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(266): getResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 87
+[10-Nov-2018 00:33:21 UTC] PHP Fatal error:  Unsupported operand types in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 100
+[10-Nov-2018 00:33:21 UTC] PHP Stack trace:
+[10-Nov-2018 00:33:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[10-Nov-2018 00:33:21 UTC] PHP   2. getResults() /home/ubuntu/workspace/cst336/hw/hw3/index.php:266
+[10-Nov-2018 00:35:08 UTC] PHP Fatal error:  Unsupported operand types in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 99
+[10-Nov-2018 00:35:08 UTC] PHP Stack trace:
+[10-Nov-2018 00:35:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[10-Nov-2018 00:35:08 UTC] PHP   2. getResults() /home/ubuntu/workspace/cst336/hw/hw3/index.php:268
+[10-Nov-2018 00:35:54 UTC] PHP Fatal error:  Unsupported operand types in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 98
+[10-Nov-2018 00:35:54 UTC] PHP Stack trace:
+[10-Nov-2018 00:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw3/index.php:0
+[10-Nov-2018 00:35:54 UTC] PHP   2. getResults() /home/ubuntu/workspace/cst336/hw/hw3/index.php:269
+[10-Nov-2018 00:53:20 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 101
+[10-Nov-2018 01:16:10 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 139
+[10-Nov-2018 01:21:06 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 147
+[10-Nov-2018 01:21:16 UTC] PHP Parse error:  syntax error, unexpected 'for' (T_FOR), expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 152
+[10-Nov-2018 01:21:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= true' at line 1' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:148
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(148): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(321): getResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 148
+[10-Nov-2018 01:23:25 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 152
+[10-Nov-2018 01:24:02 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 153
+[10-Nov-2018 01:43:41 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 153
+[10-Nov-2018 01:44:02 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 153
+[10-Nov-2018 01:45:00 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 153
+[10-Nov-2018 01:46:18 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 153
+[10-Nov-2018 02:21:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'equals true' at line 1' in /home/ubuntu/workspace/cst336/hw/hw3/index.php:149
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw3/index.php(149): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/hw/hw3/index.php(330): getResults()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw3/index.php on line 149
