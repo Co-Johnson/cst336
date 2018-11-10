@@ -106,7 +106,7 @@
         $ageRange = $stmt->fetchALL(PDO::FETCH_ASSOC);
         echo "<h3>Age</h3>";
         for($i=0; $i < count($ageRange); $i++){
-            echo $ageRange[$i]['surveyAge'] . ": " . $typeResults[$i]['count(surveyAge)'] . "<br>";    
+            echo $ageRange[$i]['surveyAge'] . ": " . $ageRange[$i]['count(surveyAge)'] . "<br>";    
         }
        
         $sql = "SELECT sum(surveyPoke), sum(surveyIngress), sum(surveyArrrrrgh), sum(surveyTTH), sum(surveySitP), sum(surveySubjectOne), sum(surveyOther) ";
