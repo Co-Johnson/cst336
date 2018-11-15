@@ -27,6 +27,7 @@
                 <a href="labs/lab3/index.php">Lab 3 - Pixabay Image Carousel</a><br />
                 <a href="labs/lab4/index.php">Lab 4 - Shopping Cart</a><br />
                 <a href="labs/lab5/index.php">Lab 5 - OtterMart</a><br />
+                <a href="labs/lab6/index.php">Lab 6 - OtterMart with Admin</a><br />
             </div>
             <div id="homework">
                 <h2>Homework</h2>
