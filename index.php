@@ -28,7 +28,7 @@
                 <a href="labs/lab4/index.php">Lab 4 - Shopping Cart</a><br />
                 <a href="labs/lab5/index.php">Lab 5 - OtterMart</a><br />
                 <a href="labs/lab6/index.php">Lab 6 - OtterMart with Admin</a><br />
-                <a href="labs/lab7/index.php">Lab 7 - JavaScript Hangman</a><br />
+                <a href="labs/lab7/index.html">Lab 7 - JavaScript Hangman</a><br />
             </div>
             <div id="homework">
                 <h2>Homework</h2>
