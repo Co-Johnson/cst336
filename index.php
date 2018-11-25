@@ -36,6 +36,7 @@
                 <a href="hw/hw1/index.html">Homework 1 - Augmented Reality</a><br />
                 <a href="hw/hw2/index.php">Homework 2 - Sliding Puzzle</a><br />
                 <a href="hw/hw3/index.php">Homework 3 - Augmented Reality Survey</a><br />
+                <a href="hw/hw4/index.html">Homework 4 - Space Invaders</a><br />
             </div>
         </div>
         <div id="footer">
