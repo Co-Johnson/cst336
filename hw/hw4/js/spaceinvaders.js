@@ -30,6 +30,7 @@ const GS_HEIGHT = 600;
 var highScore;
 if(localStorage.getItem("highScore") == null){
     highScore = 0;
+    
 }
 else{
     highScore = localStorage.getItem("highScore");
@@ -129,10 +130,17 @@ function init(){
 	bg1.className = 'gameObject';
 	bg1.src = 'img/bg.jpg';
 	
-	bg1.style.width ='800px';
-	bg1.style.height = '1422px';
-	bg1.style.left= '0px';
-	bg1.style.top = '0px';
+	$(bg1).css("width", "800px");
+	$(bg1).css("height", "1422px");
+	$(bg1).css("left", "0px");
+	$(bg1).css("top", "0px");
+	
+	//bg1.style.width ='800px';
+	//bg1.style.height = '1422px';
+	//bg1.style.left= '0px';
+	//bg1.style.top = '0px';
+	
+	
 	
 	$('#gameScreen').append(bg1);
 	//gameScreen.appendChild(bg1);
@@ -140,20 +148,32 @@ function init(){
 	bg2 = document.createElement('IMG');
 	bg2.className = 'gameObject';
 	bg2.src = 'img/bg.jpg';
-	bg2.style.width ='800px';
-	bg2.style.height = '1422px';
-	bg2.style.left= '0px';
-	bg2.style.top = '-1422px';
+	
+	$(bg2).css("width", "800px");
+	$(bg2).css("height", "1422px");
+	$(bg2).css("left", "0px");
+	$(bg2).css("top", "-1422px");
+	//bg2.style.width ='800px';
+	//bg2.style.height = '1422px';
+	//bg2.style.left= '0px';
+	//bg2.style.top = '-1422px';
 	
 	$('#gameScreen').append(bg2);
 	//gameScreen.appendChild(bg2);
 	
 	bullets = document.createElement('DIV');
 	bullets.className = 'gameObject';
-	bullets.style.width = gameScreen.style.width;
-	bullets.style.height = gameScreen.style.height;
-	bullets.style.left ='0px';
-	bullets.style.top = '0px';
+	
+	
+	$(bullets).css("width", $(gameScreen).css("width"));
+	$(bullets).css("height", $(gameScreen).css("height"));
+	$(bullets).css("left", "0px");
+	$(bullets).css("top", "0px");
+	
+	//bullets.style.width = gameScreen.style.width;
+	//bullets.style.height = gameScreen.style.height;
+	//bullets.style.left ='0px';
+	//bullets.style.top = '0px';
 	
 	$('#gameScreen').append(bullets);
 	//gameScreen.appendChild(bullets);
@@ -163,8 +183,13 @@ function init(){
 	blueOrb = document.createElement('IMG');
 	blueOrb.src = 'img/blueOrb.png';
 	blueOrb.className = 'gameObject';
-	blueOrb.style.width = '40px';
-	blueOrb.style.height = '40px';
+	
+	$(blueOrb).css("width", "40px");
+	$(blueOrb).css("height", "40px");
+	
+	//blueOrb.style.width = '40px';
+	//blueOrb.style.height = '40px';
+	
 	placeBlueOrb(blueOrb);
 	
 	$('#gameScreen').append(blueOrb);
@@ -173,10 +198,15 @@ function init(){
 	ship = document.createElement('IMG');
 	ship.src = 'img/ship.gif';
 	ship.className = 'gameObject';
-	ship.style.width = '68px';
-	ship.style.height = '68px';
-	ship.style.top = '500px';
-	ship.style.left = '366px';
+	
+	$(ship).css("width", "68px");
+	$(ship).css("height", "68px");
+	$(ship).css("top", "500px");
+	$(ship).css("left", "366px");
+	//ship.style.width = '68px';
+	//ship.style.height = '68px';
+	//ship.style.top = '500px';
+	//ship.style.left = '366px';
 
 	$('#gameScreen').append(ship);
 	//gameScreen.appendChild(ship);
@@ -184,9 +214,15 @@ function init(){
 	for(var i = 0; i < 10; i ++){
 		var enemy = new Image();
 		enemy.className = 'gameObject';
-		enemy.style.width = '64px';
-		enemy.style.height = '64px';
 		enemy.src = 'img/enemyShip.gif';
+		
+		$(enemy).css("width", "64px");
+		$(enemy).css("height", "64px");
+		
+		//enemy.style.width = '64px';
+		//enemy.style.height = '64px';
+		
+		
 		$('#gameScreen').append(enemy);
 		//gameScreen.appendChild(enemy);
 		placeEnemyShip(enemy);
@@ -197,16 +233,24 @@ function init(){
 }
 
 function explode(obj){
+	
 	var explosion = document.createElement('IMG');
 	explosion.src = 'img/explosion.gif?x='+ Date.now();
-	
 	explosion.className = 'gameObject';
-	explosion.style.width = obj.style.width;
-	explosion.style.height = obj.style.height;
-	explosion.style.left = obj.style.left;
-	explosion.style.top = obj.style.top;
+	
+	$(explosion).css("width", $(obj).css("width"));
+	$(explosion).css("height", $(obj).css("height"));
+	$(explosion).css("left", $(obj).css("left"));
+	$(explosion).css("top", $(obj).css("top"));
+	
+	//explosion.style.width = obj.style.width;
+	//explosion.style.height = obj.style.height;
+	//explosion.style.left = obj.style.left;
+	//explosion.style.top = obj.style.top;
+	
 	$('#gameScreen').append(explosion);
-	//gameScreen.appendChild(explosion);
+	
+
 }
 
 function gameloop(){
