@@ -29,6 +29,7 @@
                 <a href="labs/lab5/index.php">Lab 5 - OtterMart</a><br />
                 <a href="labs/lab6/index.php">Lab 6 - OtterMart with Admin</a><br />
                 <a href="labs/lab7/index.html">Lab 7 - JavaScript Hangman</a><br />
+                <a href="labs/lab8/index.php">Lab 8 - CSUMB Animal Shelter</a><br />
             </div>
             <div id="homework">
                 <h2>Homework</h2>
