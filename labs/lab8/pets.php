@@ -17,7 +17,7 @@
     include 'inc/header.php';
 ?>
 
-
+        
         <script>
             $(document).ready( function(){
                 
@@ -35,7 +35,7 @@
                         data: { "id": $(this).attr('id')},
                         success: function(data, status) {
                             
-                            // console.log(data);
+                            console.log(data);
                             $("#petInfo").html("<img src='img/" + data.pictureURL + "'><br>" +
                                                " Age: " + data.age + "<br>" +
                                                " Breed: " + data.breed + "<br>" + 
