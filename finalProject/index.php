@@ -48,12 +48,11 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <!-- <a class="nav-item nav-link" href="#">Features</a> -->
               <a class="nav-item nav-link" href="admin.php">Admin Page</a>
             </div>
           </div>
           <a class="btn btn-outline-light" href="scart.php">
-            <span class="glyphicon glyphicon-shopping-cart">
+           <span class="fa fa-shopping-cart" ></span>
             </span>Cart: <?php displayCount();?> </a>
         </div>
       </nav>
@@ -95,7 +94,7 @@
             <input type="text" class="form-control" name="priceTo" value="<?php if(isset($_GET['priceTo'])){ echo $_GET['priceTo'];} ?>"/>
           </div>              
           
-          <div class="col-md-2 mb-2">
+          <div class="col-md-3 mb-3">
             <label><strong>Sort By</strong></label><br>
             <div class="form-check form-check-inline">
               
@@ -109,9 +108,8 @@
         
         <button type="submit" class="btn btn-primary" name="searchForm">Search</button>  
       </form>
-      
       <?php displaySearchResults()?>
-          
+      
       <div id="electricDeals">
             <!--<div class="col">-->
                 <h1>Electric <span class="fa fa-bolt" ></span> Deals</h1>

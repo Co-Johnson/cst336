@@ -1,7 +1,8 @@
     <?php
         include 'dbConnection.php';
-       
+
         $conn = getDatabaseConnection("finalproject"); //Starts the Db connection
+
         
         //Working 
         function displayCategories() {
@@ -37,16 +38,22 @@
     }
     
         //Working    
-        function displaySearchResults(){
+        function displaySearchResults()
+        {
         global $conn;
         
         if (isset($_GET['searchForm'])) { 
             
+
+            //echo "<h3>Products Found </h3>"; 
+            
+
             $namedParameters = array();
             
             $sql = "SELECT * FROM f_product WHERE 1";
             
             if (!empty($_GET['product'])) { 
+                 $sql .=  " AND lower(productDescription) LIKE :productName";
                  $sql .=  " AND lower(productName) LIKE :productName";
                  $namedParameters[":productName"] = "%" . $_GET['product'] . "%" ; //contains any case in the decirption
             }
@@ -79,19 +86,23 @@
                      
                  } else {
                       //Implied
+
                       $sql .= " ORDER BY productName";
+
                  }
                  
                  
              }
-            
+    
+    
+
              $stmt = $conn->prepare($sql);
              $stmt->execute($namedParameters);
              $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-                echo "<div id='searchResults'>";
+             
+                echo "<div id='searchResults' class='table-responsive' >";
                 echo "<h4 id='pageTitle'>Search Results</h4>";
-                echo "<table class='table table-hover'>";
+                echo "<table class='table table-hover table-sm' cellspacing='0' width='80%'>";
                 echo "<thead class='thead-light'>";
                 echo "<tr>";
                 echo "<th scope='col'>Product Image</th>";
@@ -102,6 +113,7 @@
                 echo "</tr>";
                 echo "</thead>";
                 
+                echo "<tbody>";   
                 foreach($records as $item)
                 {
                  
@@ -114,11 +126,11 @@
                     //Format price as currency
                     $itemPriceFormated = number_format(($itemPrice),0,'.',',');
                     
-                    echo "<tbody>";
+              
                     echo "<tr id='mpRow'>";
                     echo "<th scope='row'><div id='mpRowImgDiv'><img id='mpRowImg' src='$itemImage'></div></th>";
-                    echo "<td><strong>$itemName</strong><br>$itemDescription</td>";
-                    echo "<td>$".$itemPriceFormated."</td>";
+                    echo "<td colspan='1'><strong>$itemName</strong></br>$itemDescription</td>";
+                    echo "<td colspan='1'>$".$itemPriceFormated."</td>";
                     echo "<form method='post'>";
                     
                     echo "<input type='hidden' name='itemName' value='$itemName'>";
@@ -132,15 +144,17 @@
                     else
                         echo "<td><button class='btn btn-warning'>Add to Cart</button></td>";
                     echo "</form>";
-                    echo "<td><input type='button' id='". $itemId . "' class='btn btn-primary prodDetails'  value='Details'></td>";
+                    echo "<td colspan='1'><input type='button' id='". $itemId . "' class='btn btn-primary prodDetails'  value='Details'></td>";
                     echo "</tr>";
-                    echo "</tbody>";    
+        
                     
                 }
-                
+                echo "</tbody>";   
                 echo "</table>";
                 echo "</div>";
-            }
+            
+        }
+            
         }
         
         //Working
@@ -164,5 +178,6 @@
          function displayCount(){
             echo count($_SESSION['cart']);
         }
+
     ?>
     

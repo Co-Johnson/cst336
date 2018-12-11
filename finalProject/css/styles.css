@@ -117,7 +117,7 @@ h3 {
 }
 
 
-#displayCart tr {
+#displayCart tr, td {
     white-space: nowrap;
     
 }
@@ -178,6 +178,7 @@ li, ol{
 #mpRow{
     height: 90px;
     margin: 30px;
+
 }
 
 #mpRowImgDiv{
@@ -246,7 +247,9 @@ footer{
   padding: 10px;
 }
 
-.word-wrap {
-        
-        word-wrap: break-word;
-    }
+
+#displayCart tr, td {
+    white-space: normal !important;
+}
+
+
